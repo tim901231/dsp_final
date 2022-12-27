@@ -1,5 +1,8 @@
 # dsp_final
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pmfr4qFPk1hDQNAVSr4JtLpKw4L-haut#scrollTo=4BqVYcDtLGZn]
+
+
 ## Experiment 1, Denoising with CDiffuSE
 
 1. Clone the repository about CDiffuSE, install package
@@ -24,4 +27,5 @@ it will generate noisy file with your voice and save file in noisy_test_wav
 cd CDiffuSE
 ./inference.sh 1 author 370200
 ```
+4. Your result will in ./output/Enhanced/author/model370200/voiceban
 
