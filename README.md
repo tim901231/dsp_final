@@ -1,6 +1,6 @@
 # dsp_final
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pmfr4qFPk1hDQNAVSr4JtLpKw4L-haut#scrollTo=4BqVYcDtLGZn]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pmfr4qFPk1hDQNAVSr4JtLpKw4L-haut?usp=sharing)
 
 
 ## Experiment 1, Denoising with CDiffuSE
