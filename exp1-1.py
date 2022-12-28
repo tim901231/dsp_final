@@ -12,7 +12,7 @@ for filename in os.listdir(dir):
     f = os.path.join(dir, filename)
     sound = AudioSegment.from_file(f)
     sound = set_loudness(sound, target_dBFS=-20)
-    sound.export(f'./clean_adjust_dB/{filename.split(".")[0]}_origin.wav', format='wav')
+    sound.export(f'./clean_adjust_dB/{filename}', format='wav')
 
     wind = AudioSegment.from_file('./noise/wind.wav')
     wind = set_loudness(wind, target_dBFS=-37.5)
