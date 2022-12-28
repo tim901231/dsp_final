@@ -31,7 +31,7 @@ cd CDiffuSE
 ```
 4. Your result will in ./output/Enhanced/author/model370200/voiceban
 
-5. For evaluation, see colab notebook ("we use online dataset")
+5. For evaluation, see colab notebook ("we use testing dataset of DEMAND")
 
 
 ```
