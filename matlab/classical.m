@@ -7,7 +7,7 @@ end
 [x,fs] = audioread(filename);
 x = x(:, 1);
 len = floor(20*fs/1000);            % Frame size in samples
-if rem(len,2) == 1, len=len+1; end;
+if rem(len,2) == 1, len=len+1; end
 PERC = 50;                          % window overlap in percent of frame size
 len1 = floor(len*PERC/100);
 len2 = len-len1; 
