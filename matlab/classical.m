@@ -1,3 +1,14 @@
+function classical(inDir, outDir)
+
+myFiles = dir(fullfile(inDir,'*.wav')); %gets all wav files in struct
+for k = 1:length(myFiles)
+  baseFileName = myFiles(k).name;
+  fullFileName = fullfile(inDir, baseFileName);
+  outFileName = sprintf("%s%s", outDir, baseFileName);
+  specsub(fullFileName, outFileName);
+  % all of your actions for filtering and plotting go here
+end
+
 function specsub(filename,outfile)
 if nargin < 2
    fprintf('Usage: specsub noisyfile.wav outFile.wav \n\n');
