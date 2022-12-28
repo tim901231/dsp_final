@@ -1,5 +1,7 @@
 # dsp_final
 
+Recommend run in colab
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pmfr4qFPk1hDQNAVSr4JtLpKw4L-haut?usp=sharing)
 
 
@@ -28,4 +30,6 @@ cd CDiffuSE
 ./inference.sh 1 author 370200
 ```
 4. Your result will in ./output/Enhanced/author/model370200/voiceban
+
+5. For evaluation, see colab notebook
 
