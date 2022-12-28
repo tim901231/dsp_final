@@ -52,3 +52,14 @@ python3 exp1-2.py
 ```
 ## Experiment 2
 
+1. move the noisy file to matlab/mix/. The fil should be in wav format.
+
+2. use either command
+```
+classical('./mix/', './out/')
+```
+in matlab GUI terminal, or 
+```
+matlab -nodisplay -r "classical('./mix/', './out/')"
+```
+in shell. The output wav will be in matlab/out.
