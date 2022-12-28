@@ -13,7 +13,7 @@ git clone https://github.com/neillu23/CDiffuSE.git
 pip install -r requirements.txt
 ```
 
-2. Put your noisy file into directory noisy_testset_wav
+2. Put your noisy file into directory /noisy_testset_wav
 the file need to be .wav, you can convert your voice with only converter
 
 If you only have clean voice file, you can put your file into directory voice_mix, and type (not need to be .wav file)
@@ -31,5 +31,24 @@ cd CDiffuSE
 ```
 4. Your result will in ./output/Enhanced/author/model370200/voiceban
 
-5. For evaluation, see colab notebook
+5. For evaluation, see colab notebook ("we use only dataset")
+
+
+```
+cd .. # at dsp_final
+rm -r noisy_testset_wav
+rm -r clean_adjust_dB
+mkdir DEMAND
+mkdir clean_adjust_dB
+mkdir noisy_testset_wav
+wget -O ./clean_test.zip https://datashare.ed.ac.uk/bitstream/handle/10283/2791/clean_testset_wav.zip?sequence=1&isAllowed=y
+unzip -q ./clean_test.zip -d DEMAND
+python3 exp1-1.py  # default: wind SNR=17.5dB
+cd CDiffuSE
+./inference.sh 1 author 370200
+cd ..
+python3 exp1-2.py
+
+```
+## Experiment 2
 
